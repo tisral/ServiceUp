@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navProfile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/nav_profile" />
+
+        <item
+            android:id="@+id/navListAService"
+            android:icon="@drawable/ic_mode_edit"
+            android:title="@string/nav_list_a_service" />
+
+        <item
+            android:id="@+id/navMyProviders"
+            android:icon="@drawable/ic_assignment"
+            android:title="My Providers" />
+
+        <item
+            android:id="@+id/navMyCustomers"
+
+            android:icon="@drawable/ic_my_services"
+            android:title="My Customers" />
+
+<!--        <item-->
+<!--            android:id="@+id/navMap"-->
+<!--            android:icon="@drawable/ic_map"-->
+<!--            android:title="@string/nav_map" />-->
+
+
+    </group>
+
+<!--    <item android:title="@string/nav_project_info">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/navAbout"-->
+<!--                android:icon="@drawable/ic_about"-->
+<!--                android:title="@string/nav_about" />"-->
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

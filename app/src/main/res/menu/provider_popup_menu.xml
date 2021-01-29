@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/provider_popup_call"
+        android:title="Call" />
+
+    <item
+        android:id="@+id/provider_popup_email"
+        android:title="Email" />
+
+    <item
+        android:id="@+id/provider_popup_edit"
+        android:title="Edit" />
+
+    <item
+        android:id="@+id/provider_popup_review"
+        android:title="Review" />
+
+    <item
+        android:id="@+id/provider_popup_cancel"
+        android:title="Cancel" />
+</menu>

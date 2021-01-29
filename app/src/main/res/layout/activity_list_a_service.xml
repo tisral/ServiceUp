@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".ListAService">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/listProfession"
+            android:paddingTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/listProfession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="@string/listDescription">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/listDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:maxLength="400"
+                android:lines="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Availability" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sunday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="S" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/monday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="M" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tuesday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="T" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/wednesday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="W" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/thursday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="R" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/friday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="F" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/saturday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="S" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Rate" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:text="$" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/listRate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/listRate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:maxLength="7"
+            android:textAlignment="center"
+            android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="/ hour" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Time" />
+
+
+            <Button
+                android:id="@+id/startTimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="74dp"
+                android:text="START TIME"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Time" />
+
+            <Button
+
+                android:id="@+id/endTimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="END TIME" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/listAServiceSave"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/save"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

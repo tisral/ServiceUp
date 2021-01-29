@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!--            android:textSize="18sp"-->
+
+
+            <!--        android:textSize="18sp"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textview.MaterialTextView
+
+                    android:id="@+id/serviceProviderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="name"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/providerPic"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/ic_face"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/jobTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="A Title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+                <TextView
+                    android:id="@+id/serviceCurrency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="$"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/serviceRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="total"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                <TextView
+                    android:id="@+id/serviceTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="/ hour"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/rating"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Rate"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/jobDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="1"
+                    android:text="I am a good worker"
+                    android:textAlignment="textStart" />
+
+                <ImageButton
+                    android:id="@+id/arrowBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_keyboard_arrow_down" />
+
+
+                <!--        android:textSize="18sp"-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/expandableView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/dashboardAddToCart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_add" />
+
+                <ImageButton
+                    android:id="@+id/dashboardCallProvider"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/ic_call" />
+
+                <ImageButton
+                    android:id="@+id/dashboardEmailProvider"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/ic_email" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

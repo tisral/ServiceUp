@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "463774282473",
+    "firebase_url": "https://serviceup-a4b28.firebaseio.com",
+    "project_id": "serviceup-a4b28",
+    "storage_bucket": "serviceup-a4b28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463774282473:android:56ec8a5f3d08691291f678",
+        "android_client_info": {
+          "package_name": "com.example.ServiceUp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463774282473-hptdtnthffev24q1f6krmk2i77av885v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ServiceUp",
+            "certificate_hash": "4187b40f3d73111b354115f3932c86f51606832f"
+          }
+        },
+        {
+          "client_id": "463774282473-ferfn86cui8ueephu7piavr0igt98n7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0tD5-0eCXVBRXcct_6qnrx4AHk56lJhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463774282473-ferfn86cui8ueephu7piavr0igt98n7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
